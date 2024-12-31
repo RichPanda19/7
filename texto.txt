@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DayZ Trader Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DayZ Trader Store</h1>
+    </header>
+    <main>
+        <!-- Secciones de productos -->
+        <div class="section" id="weapons">
+            <h2>Weapons</h2>
+            <div class="item">
+                <p>Tier 4 Weapons</p>
+                <span>$60,000</span>
+                <button onclick="addToCart('Tier 4 Weapons', 60000)">Add</button>
+            </div>
+            <div class="item">
+                <p>Tier 3 Weapons</p>
+                <span>$40,000</span>
+                <button onclick="addToCart('Tier 3 Weapons', 40000)">Add</button>
+            </div>
+            <div class="item">
+                <p>Tier 2 Weapons</p>
+                <span>$30,000</span>
+                <button onclick="addToCart('Tier 2 Weapons', 30000)">Add</button>
+            </div>
+            <div class="item">
+                <p>Tier 1 Weapons</p>
+                <span>$20,000</span>
+                <button onclick="addToCart('Tier 1 Weapons', 20000)">Add</button>
+            </div>
+        </div>
+
+        <div class="section" id="medical">
+            <h2>Medical Supplies</h2>
+            <div class="item">
+                <p>Medical Pack</p>
+                <span>$15,000</span>
+                <button onclick="addToCart('Medical Pack', 15000)">Add</button>
+            </div>
+        </div>
+
+        <div class="section" id="building">
+            <h2>Building Supplies</h2>
+            <div class="item">
+                <p>Boxed Nails</p>
+                <span>$5,000</span>
+                <button onclick="addToCart('Boxed Nails', 5000)">Add</button>
+            </div>
+            <div class="item">
+                <p>Metal Sheet</p>
+                <span>$18,000</span>
+                <button onclick="addToCart('Metal Sheet', 18000)">Add</button>
+            </div>
+        </div>
+
+        <div class="section" id="boom">
+            <h2>Explosives</h2>
+            <div class="item">
+                <p>IED Case</p>
+                <span>$70,000</span>
+                <button onclick="addToCart('IED Case', 70000)">Add</button>
+            </div>
+            <div class="item">
+                <p>Plastics</p>
+                <span>$140,000</span>
+                <button onclick="addToCart('Plastics', 140000)">Add</button>
+            </div>
+        </div>
+
+        <!-- Carrito de compras -->
+        <div id="cart-section">
+            <h2>Shopping Cart</h2>
+            <ul id="cart"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="clear-cart" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 DayZ Trader Store</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
